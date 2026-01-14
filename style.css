@@ -23,3 +23,12 @@ h1 {
    font-family: "Jersey 15", sans-serif;
 
 }
+
+#visitor-counter {
+  position: fixed;
+  left: 50%;
+  bottom: 16px;
+  transform: translateX(-50%);
+  font-size: 14px;
+  opacity: 0.9;
+}
