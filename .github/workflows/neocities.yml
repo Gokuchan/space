@@ -12,9 +12,19 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Prepare deploy directory
+        run: |
+          rm -rf public
+          mkdir -p public
+          rsync -av --delete \
+            --exclude '.git/' \
+            --exclude '.github/' \
+            --exclude 'public/' \
+            ./ public/
+
       - name: Deploy to Neocities
         uses: bcomnes/deploy-to-neocities@v1
         with:
-          api_token: ${{ secrets.NEOCITIES_SECRET }}
-          dist_dir: ./
+          api_key: ${{ secrets.NEOCITIES_SECRET }}
+          dist_dir: public
           cleanup: true
