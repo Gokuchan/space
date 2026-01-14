@@ -7,6 +7,19 @@ body {
   font-family: "Pixelify Sans", sans-serif;
 }
 
+#container {
+  margin: 3em auto;
+  width: 70%;
+  text-align: center;
+	max-width: 500px;
+  outline-color: rgb(62, 62, 62);
+  outline-style: solid;
+  outline-width: 1px;
+  outline-offset: 0;
+  padding: 2rem;
+}
+
 h1 {
    font-family: "Jersey 15", sans-serif;
+
 }

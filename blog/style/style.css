@@ -5,13 +5,15 @@ body {
   font-size: 18px;
   font-family: "Pixelify Sans", sans-serif;
   margin: 0;
+  background-color: rgb(210, 210, 210);
+  color: rgb(62, 62, 62);
 }
 
 p {
-  line-height: 1.6em; /*I find the default HTML line-height tends to be a bit claustrophobic for main text*/
+  line-height: 1.6em;
 }
 #content li {
-  line-height: 1.6em; /*I find the default HTML line-height tends to be a bit claustrophobic for main text*/
+  line-height: 1.6em;
 }
 
 h1 {
