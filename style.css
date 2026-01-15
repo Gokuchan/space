@@ -51,3 +51,10 @@ h1 {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+
+.grid-container {
+  img {
+   width: 300px;
+  }
+}
