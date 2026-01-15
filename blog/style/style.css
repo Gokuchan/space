@@ -62,8 +62,8 @@ a:hover {
   margin: 3em auto;
   width: 90%;
 	max-width: 700px;
-  color: black;
-  outline-color: black;
+  color: color: rgb(62, 62, 62);
+  outline-color: color: rgb(62, 62, 62);
   outline-style: solid;
   outline-width: 1px;
   outline-offset: 0;
@@ -76,7 +76,7 @@ a:hover {
 
 /*HEADER STYLE*/
 #header {
-  background-color: black;
+  background-color: color: rgb(62, 62, 62);
   padding: 0 5%;
 }
 #header ul {
