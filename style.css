@@ -51,10 +51,45 @@ h1 {
   white-space: nowrap;
 }
 
-
+/*GALLERY*/
 .grid-container {
-  display: flex;
-  img {
-   width: 300px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.grid-container div {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.grid-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.grid-container img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.75rem;
+    padding: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 0.5rem;
+    padding: 0.5rem;
   }
 }
